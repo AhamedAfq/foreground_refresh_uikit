@@ -16,8 +16,6 @@
 		9886DD402C1573BB0078E551 /* foregroundRefreshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9886DD3F2C1573BB0078E551 /* foregroundRefreshTests.swift */; };
 		9886DD4A2C1573BB0078E551 /* foregroundRefreshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9886DD492C1573BB0078E551 /* foregroundRefreshUITests.swift */; };
 		9886DD4C2C1573BB0078E551 /* foregroundRefreshUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9886DD4B2C1573BB0078E551 /* foregroundRefreshUITestsLaunchTests.swift */; };
-		9886DD5C2C157FB30078E551 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9886DD5B2C157FB30078E551 /* TimerModel.swift */; };
-		9886DD5F2C15E7C80078E551 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9886DD5E2C15E7C80078E551 /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +49,6 @@
 		9886DD452C1573BB0078E551 /* foregroundRefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foregroundRefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9886DD492C1573BB0078E551 /* foregroundRefreshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foregroundRefreshUITests.swift; sourceTree = "<group>"; };
 		9886DD4B2C1573BB0078E551 /* foregroundRefreshUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foregroundRefreshUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9886DD5B2C157FB30078E551 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
-		9886DD5E2C15E7C80078E551 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +99,8 @@
 		9886DD272C1573B90078E551 /* foregroundRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				9886DD5D2C15E7B30078E551 /* Helper */,
 				9886DD5A2C1575C80078E551 /* Controller */,
 				9886DD592C1575B90078E551 /* View */,
-				9886DD582C15759C0078E551 /* Model */,
 				9886DD282C1573B90078E551 /* AppDelegate.swift */,
 				9886DD2A2C1573B90078E551 /* SceneDelegate.swift */,
 				9886DD312C1573BB0078E551 /* Assets.xcassets */,
@@ -133,14 +127,6 @@
 			path = foregroundRefreshUITests;
 			sourceTree = "<group>";
 		};
-		9886DD582C15759C0078E551 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9886DD5B2C157FB30078E551 /* TimerModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		9886DD592C1575B90078E551 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,14 +141,6 @@
 				9886DD2C2C1573B90078E551 /* ViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		9886DD5D2C15E7B30078E551 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				9886DD5E2C15E7C80078E551 /* NetworkHelper.swift */,
-			);
-			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,8 +275,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9886DD2D2C1573B90078E551 /* ViewController.swift in Sources */,
-				9886DD5C2C157FB30078E551 /* TimerModel.swift in Sources */,
-				9886DD5F2C15E7C80078E551 /* NetworkHelper.swift in Sources */,
 				9886DD292C1573B90078E551 /* AppDelegate.swift in Sources */,
 				9886DD2B2C1573B90078E551 /* SceneDelegate.swift in Sources */,
 			);
