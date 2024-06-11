@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    
+    @IBOutlet var timerView: UIView!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var timerStatusLabel: UILabel!
     @IBOutlet weak var timerButton: UIButton!
@@ -23,6 +26,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshData), name: Notification.Name("AppWillEnterForeground"), object: nil)
+        timerButton.setTitle("Start", for: .normal)
+        timerReset.setTitle("Reset", for: .normal)
+        timerButton.tintColor = .green
+        timerReset.tintColor = .orange
+    }
+    
+    deinit {
+            // Remove observer when the view controller is deallocated
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("AppWillEnterForeground"), object: nil)
+    }
+    
+    @objc func refreshData() {
+        // Implement your data refreshing logic here
+        print("App is entering foreground - refresh data")
+        self.timer?.invalidate()
+        timerView.reloadInputViews()
+        timerLabel.text = "00h : 00m : 00s"
+        seconds = 0
         timerButton.setTitle("Start", for: .normal)
         timerReset.setTitle("Reset", for: .normal)
         timerButton.tintColor = .green

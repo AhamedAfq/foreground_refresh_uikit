@@ -69,6 +69,7 @@
                         <outlet property="timerLabel" destination="Iyk-yV-sBa" id="JC3-8x-EpQ"/>
                         <outlet property="timerReset" destination="IvQ-CB-bSw" id="ij6-pJ-0Ij"/>
                         <outlet property="timerStatusLabel" destination="Rws-Zy-Wzn" id="9bi-rq-4VV"/>
+                        <outlet property="timerView" destination="8bC-Xf-vdC" id="F2V-KX-xSp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
